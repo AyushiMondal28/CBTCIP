@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(gradient-background.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+  }
+
+  .container {
+    position: relative;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-radius: 16px;
+    box-shadow: 0 0 32px rgba(255, 255, 255, 0.5); /* Soft shadow */
+  }
+  
+  h1 {
+    color: cornsilk;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background: transparent;
+    position: absolute;
+    right: 20px;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #222;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-top: 20px;
+  }
+  
+  li {
+    color: antiquewhite;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .remove-btn {
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container{
+      padding: 50px;
+      max-width: 500px;
+    }
+    input[type="text"] {
+      width: 60%;
+    }
+  }
+    
+  .popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: none;
+  }
+  
+  .completion-popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: none;
+  }
