@@ -3,7 +3,7 @@ const cityInput = document.getElementById('cityInput');
 const weatherResults = document.getElementById('weatherResult');
 const btn=document.getElementById('btn');
 
-const API_KEY = '4ddbae85aa34f3df490d6e81001fa1ce'; // Replace with your API key
+const API_KEY = 'Your-api-id'; // Replace with your API key
 
 btn.addEventListener('click', (e) => {
   e.preventDefault();
